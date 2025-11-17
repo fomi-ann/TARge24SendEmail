@@ -12,7 +12,7 @@ jobs:
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
         subject: "ALERT, WE HAVE DETECTED HOT SINGLE COMMITS IN YOUR AREA ${{github.repository}}"
-        body:
+        body: |
           Hello team,
           A hot single commit has been detected in your area! Ples review changes, and merg into main branch.
 
